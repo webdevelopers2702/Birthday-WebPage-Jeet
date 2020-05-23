@@ -1,0 +1,497 @@
+<html>
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet\bulbs.css">
+        <link rel="stylesheet" href="stylesheet\index.css">
+        <link rel="stylesheet" href="stylesheet\cake.css">
+        <link rel="stylesheet" href="stylesheet\balloons.css">
+        <link rel="stylesheet" href="stylesheet\sidemenu.css">
+        <link rel="stylesheet" href="stylesheet\slideshow.css">
+        <link rel="stylesheet" href="stylesheet\envelope.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+        <script src="index.js"></script>
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    
+        <title> Happy Birthday </title>
+
+    </head>
+
+    <body id="body-init">
+
+        <div id="start-btns-div">
+            <a id="start-btn" href="#" onclick="displayCake()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                TURN ON LIGHTS
+            </a>
+            <!-- <button id="start-btn" class="start-button" onclick="displayCake()"> TURN ON LIGHTS </button> -->
+            <button id="start-btn2" class="start-button display-none" onclick="blowCandle()"> BLOW CANDLE </button>
+        </div>
+    
+        <!-- ########## CAKE ########## -->
+       
+        <div id="cake-container">
+            <div id = "cake1" class="display-none">
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+                <div class="candle">
+                    <div id = "cake11" class="flame"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ########## AUDIO ########## -->
+
+        <audio id="background-audio" controls loop>
+            <source src="audio\audio.mp3"></source>
+        </audio>
+
+        <!-- ########## BULBS ########## -->
+    
+
+        <div id="bulbs-off" class="display-none">
+            <div id="blue-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="green-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="orange-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="pink-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images/bulb.png">
+            </div>
+            <div id="red-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images//bulb.png">
+            </div>
+            <div id="yellow-bulb-off" class="bulbs">
+                <img class="bulb-off" src="images//bulb.png">
+            </div>
+        </div>
+
+        <div id="bulbs-on" class="display-none">
+            <div id="blue-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_blue.png">
+            </div>
+            <div id="green-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_green.png">
+            </div>
+            <div id="orange-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_orange.png">
+            </div>
+            <div id="pink-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images/bulb_pink.png">
+            </div>
+            <div id="red-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images//bulb_red.png">
+            </div>
+            <div id="yellow-bulb-on" class="bulbs">
+                <img class="bulb-on" src="images//bulb_yellow.png">
+            </div>
+            </div>
+        </div>
+
+        <!-- ########## BALLOONS ########## -->
+
+        <div id="balloons" class="display-none">
+
+            <!-- BALLOON 1 - -5% -->
+
+            <div class="balloon">  
+                <img src="images\b5.png">
+            </div>
+
+            <!-- BALLOON 2 - 5% -->
+
+            <div class="balloon">  
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 3 - 10% -->
+
+           <div class="balloon">  
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 4 - 15% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 5 - 20% -->
+
+           <div class="balloon">
+               <img src="images\b5.png">
+           </div>
+
+           <!-- BALLOON 6 - 25% -->
+
+           <div class="balloon">
+               <img src="images\b2.png">
+           </div>
+
+           <!-- BALLOON 7 - 30% -->
+
+           <div class="balloon">
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 8 - 35% -->
+           
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 9 - 40% -->
+
+           <div class="balloon">
+               <img src="images\b6.png">
+           </div>
+
+           <!-- BALLOON 10 - 45% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 11 - 50% -->
+           
+           <div class="balloon">
+               <img src="images\b2.png">
+           </div>
+
+           <!-- BALLOON 12 - 55% -->
+
+           <div class="balloon">
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 13 - 60% -->
+           
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 14 - 65% -->
+
+           <div class="balloon">
+               <img src="images\b5.png">
+           </div>
+
+           <!-- BALLOON 15 - 70% -->
+
+           <div class="balloon">
+               <img src="images\b6.png">
+           </div>
+
+           <!-- BALLOON 16 - 75% -->
+
+           <div class="balloon">
+               <img src="images\b4.png">
+           </div>
+
+           <!-- BALLOON 17 - 80% -->
+
+           <div class="balloon">
+               <img src="images\b3.png">
+           </div>
+
+           <!-- BALLOON 18 - 85% -->
+
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- BALLOON 19 - 90% -->
+
+           <div class="balloon">
+               <img src="images\b1.png">
+           </div>
+
+           <!-- BALLOON 20 - 95% -->
+
+           <div class="balloon">
+               <img src="images\b7.png">
+           </div>
+
+           <!-- ########## SIDE MENU ########## -->
+
+        <aside>
+            <div id="side-menu" class="display-none">
+                <div id="toggle-button" class="toggle-btn" onclick="toggleSideBar()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li class="sidebar-title">MENU</li>
+                    <li class="options" onclick="showHome()">Home</li>
+                    <li class="options" onclick="showMemories()">Memories</li>
+                    <li class="options" onclick="showQuizes()">Quizes</li>
+                    
+                    <!-- <ul class="logo">
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul> -->
+                    
+                </ul>
+            </div>
+        </aside>
+
+        <!-- ########## TITLE ########## -->
+
+        <div id="title-container" class="display-none">
+            <div class="title-label"><h2> HAPPY BIRTHDAY JEET</h2></div>
+        </div>
+
+        <!-- ########## MESSAGES ########## -->
+
+        <div id="message_container" class="messages"><span id="message" class="change-content"></span></div>
+
+        <!-- ########## 3D SLIDE SHOW ########## -->
+
+        <div id="photo-slideshow" class="display-none">
+            <section class="slideshow">
+                <div class="content">
+                    <div class="content-carrousel">
+                        <figure class ="shadow"><img src="images\slideshow_image1.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image2.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image3.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image4.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image5.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image6.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image7.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image8.jpg"></figure>
+                        <figure class ="shadow"><img src="images\slideshow_image9.jpg"></figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ########## ENVELOPE ########## -->
+       
+        <div id="envelope" class="envelope-container display-none">
+            <div class="wrapper">
+                <div class="mail">
+                    <div class="cover"></div>
+                    <div class="letter"><p> HAPPY BIRTHDAY TO ONE OF THE FEW PEOPLE WHOSE BIRTHDAY WE CAN REMEMBER WITHOUT FACEBOOK REMINDER ♥ </p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ########## QUIZES ########## -->
+
+        <div id="quiz">
+
+            <!-- ########## QUIZ 1 ########## -->
+
+            <div id="quiz1" class="display-none">
+                <h3 class="quiz-question">
+                    LIST OF TOP 10 GIRLFRIENDS<br>
+                    (ANSWERS MUST BE IN ALPHABETICAL ORDER)
+                </h3>
+   
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox1_1" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 1"/>
+                    <input type="text" id="quiz-textbox1_2" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 2"/>
+                    <input type="text" id="quiz-textbox1_3" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 3"/>
+                    <input type="text" id="quiz-textbox1_4" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 4"/>
+                    <input type="text" id="quiz-textbox1_5" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 5"/>
+                    <input type="text" id="quiz-textbox1_6" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 6"/>
+                    <input type="text" id="quiz-textbox1_7" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 7"/>
+                    <input type="text" id="quiz-textbox1_8" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 8"/>
+                    <input type="text" id="quiz-textbox1_9" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 9"/>
+                    <input type="text" id="quiz-textbox1_10" class="quiz-textbox" onchange="capitalizeTextboxContents(1)" placeholder="Enter Answer 10"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz1" class="quiz-button" onclick="checkQuiz1()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video1" class="display-none" controls hidden>
+                        <source src="videos\video1.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+            </div>
+
+            <!-- ########## QUIZ 2 ########## -->
+
+            <div id="quiz2" class="display-none">
+                <h3 class="quiz-question">
+                    LIST OF TOP 10 BHAIJANN<br>
+                    (ANSWERS MUST BE IN ALPHABETICAL ORDER)
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox2_1" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 1"/>
+                    <input type="text" id="quiz-textbox2_2" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 2"/>
+                    <input type="text" id="quiz-textbox2_3" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 3"/>
+                    <input type="text" id="quiz-textbox2_4" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 4"/>
+                    <input type="text" id="quiz-textbox2_5" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 5"/>
+                    <input type="text" id="quiz-textbox2_6" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 6"/>
+                    <input type="text" id="quiz-textbox2_7" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 7"/>
+                    <input type="text" id="quiz-textbox2_8" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 8"/>
+                    <input type="text" id="quiz-textbox2_9" class="quiz-textbox" onchange="capitalizeTextboxContents(2)" placeholder="Enter Answer 9"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz2" class="quiz-button" onclick="checkQuiz2()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video2" class="display-none" controls hidden>
+                        <source src="videos\video2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## QUIZ 3 ########## -->
+
+            <div id="quiz3" class="display-none">
+                <h3 class="quiz-question">
+                    A SIX LETTER WORD WHICH STARTS FROM "F" AND ENDS WITH "Y"
+                </h3>
+
+                <div class="quiz-textbox-container">
+                    <input type="text" id="quiz-textbox3_1" class="quiz-textbox" onchange="capitalizeTextboxContents(3)" placeholder="Enter Your Answer"/>
+                </div>
+
+                <div class="quiz-button-container">
+                    <button type="submit" id="submit-quiz3" class="quiz-button" onclick="checkQuiz3()"> Submit </button>
+                </div>
+
+                <div class="video-container">
+                    <video height="300" id="video3" class="display-none" controls hidden>
+                        <source src="videos\video3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ########## POST QUIZ - THANK YOU ########## -->
+
+            <div id="post-quiz" class="display-none">
+                <h2>
+                    THANK YOU.!
+                </h2>
+            </div>
+        </div>
+
+        <!-- ########## MEMORIES ########## -->
+
+        <div id="memories" class="memories-container display-none">
+
+            <audio id="memory-background-audio" controls>
+                <source src="audio\memory_background_audio.mp3"></source>
+            </audio>
+
+            <div id="memories-section-1" class="memories-section1 display-none">
+
+                <div id="memory1" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory1.jpg"/>
+                    <audio id="memory-audio1" controls>
+                        <source src="audio\memory_audio1.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory2" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory2.jpg"/>
+                    <audio id="memory-audio2" controls>
+                        <source src="audio\memory_audio2.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory3" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory3.jpg"/>
+                    <audio id="memory-audio3" controls>
+                        <source src="audio\memory_audio3.mp3"></source>
+                    </audio>
+                </div>
+
+                <div id="memory4" class="memory display-none">
+                    <img class="memories-image-type1" src="images/memory4.jpg"/>
+                    <audio id="memory-audio4" controls>
+                        <source src="audio\memory_audio4.mp3"></source>
+                    </audio>
+                </div>
+            </div>
+
+            <div id="memories-section-2" class="memories-section2 display-none">
+
+                <div id="memory5" class="memory display-none">
+
+                    <div class="memories-section2-part1">
+                        <div>
+                            <img class="memories-image-type2" src="images/memory5.jpg"/>
+                        </div>
+                    </div> 
+
+                    <div class="memories-section2-part2">
+                        <div>
+                            <img class="memories-image-type3" src="images/memory6.jpg"/>
+                        </div>
+    
+                        <div>
+                            <img class="memories-image-type3" src="images/memory7.jpg"/>
+                        </div>
+                    </div>
+                    
+                    <audio id="memory-audio5" controls>
+                        <source src="audio\memory_audio5.mp3"></source>
+                    </audio>
+
+                </div>
+
+                <div id="memory6" class="memory display-none">
+                    
+                    <div class="memories-section2-part1">
+                        <div>
+                            <img class="memories-image-type2" src="images/memory8.jpg"/>
+                        </div>
+                    </div>
+                    
+                    <div class="memories-section2-part2">
+                        <div>
+                            <img class="memories-image-type3" src="images/memory9.jpg"/>
+                        </div>
+    
+                        <div>
+                            <img class="memories-image-type3" src="images/memory10.jpg"/>
+                        </div>
+                    </div>
+
+                    <audio id="memory-audio6" controls>
+                        <source src="audio\memory_audio6.mp3"></source>
+                    </audio>
+
+                </div>
+            </div>
+
+            <div id="post-memory" class="memories-section-3  display-none">
+                <div>
+                    <h2> THANK YOU </h2>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+    
+</html>

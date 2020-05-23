@@ -1,0 +1,204 @@
+/* #################### SIDE MENU #################### */
+
+.sidebar{
+    position: fixed;
+    width: 260px;
+    height: 100%;
+    background-color: black;
+    left: -260px;
+    transition: all 500ms linear;
+    z-index: 100;
+}
+.sidebar.active{
+    left:0px;
+}
+
+.sidebar .sidebar-title{
+    color: red;
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    text-align: center;
+    font-size: 30;
+    font-style: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar .sidebar-title:hover{
+    color: red;
+    background:  black;
+    cursor: default;
+}
+
+.sidebar .options{
+    color: rgba(230,230,230,0.9);
+    list-style: none;
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(100,100,100,0.3);
+    text-align: center;
+    font-size: 22;
+}
+
+.sidebar .options:hover{
+    color: black;
+    background:  rgba(230,230,230,0.9);
+    cursor: pointer;
+}
+
+.toggle-btn{
+    position: absolute;
+    left: 270px;
+    top: 5px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #ad0707;
+    margin: 5px 0px;
+    opacity: 0.8;
+}
+
+.sidebar .toggle-btn span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #ad0707;
+    margin: 5px 0px;
+    opacity: 0.8;
+}
+
+.logo{
+    display: flex;
+    position: relative;
+    border-style: solid 2px red;
+    /* transform: translate(-50%,-50%); */
+}
+
+.logo li{
+    list-style: none;
+}
+
+.logo li a{
+    width: 22px;
+    height: 22px;
+    /* padding-bottom: 1px;
+    padding-right: 0px; */
+    background: #ffffff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    z-index: 1;
+}
+
+.logo li a .fa{
+    position: relative;
+    color: #262626;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.logo li a:hover .fa{
+    transform: rotateY(360deg);
+}
+
+.logo li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff0000;
+}
+/* fb tw g in insta */
+
+.logo li:nth-child(1) a::before{
+    background: #3b5999;
+}
+
+.logo li:nth-child(2) a::before{
+    background: #e4405f;
+}
+
+.logo li:nth-child(3) a::before{
+    background: #dd4b39;
+}
+
+  
+/* .logo li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.logo li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    background: #d35400;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+}
+
+.logo li:nth-child(1):before{
+    background: #4267B2;
+}
+.logo li:nth-child(2):before{
+    background: #E1306C;
+}
+.logo li:nth-child(3):before{
+    background: #ff0000;
+}
+.logo li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+/* }
+.logo li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+}
+.logo li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+}
+.logo li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+}
+.logo li:nth-child(1):hover{
+    color: #456cba;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+}
+.logo li:nth-child(2):hover{
+    color: #e23670;
+    box-shadow: 0 0 15px #E1306C;
+    text-shadow: 0 0 15px #E1306C;
+}
+.logo li:nth-child(3):hover{
+    color: #ff1a1a;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+} */ */

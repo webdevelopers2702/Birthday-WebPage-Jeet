@@ -1,0 +1,455 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bulb-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly; 
+    width: 100%;
+    height: 15%;
+}
+
+.bulbs{
+    width: 100%;
+}
+
+.bulb-container img{
+    width: 80%;
+}
+
+.bulb-off{
+    display: fixed;
+    z-index: 50;
+}
+
+.bulb-on{
+    display: fixed;
+    z-index: 51;  
+}
+
+/* #################### BLUE BULB #################### */
+
+#blue-bulb-on{
+    -webkit-animation: blue-bulb-glow infinite 7s;
+	-moz-animation: blue-bulb-glow infinite 7s;
+	-o-animation: blue-bulb-glow infinite 7s;
+	-ms-animation: blue-bulb-glow infinite 7s;
+    animation: blue-bulb-glow infinite 7s;
+    animation-delay: 0s;
+}
+
+@keyframes blue-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blue-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blue-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blue-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes blue-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* #################### GREEN BULB #################### */
+
+#green-bulb-on{
+    -webkit-animation: green-bulb-glow infinite 7s;
+	-moz-animation: green-bulb-glow infinite 7s;
+	-o-animation: green-bulb-glow infinite 7s;
+	-ms-animation: green-bulb-glow infinite 7s;
+    animation: green-bulb-glow infinite 7s;
+    animation-delay: 0.5s;
+}
+
+@keyframes green-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes green-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes green-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes green-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes green-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* #################### ORANGE BULB #################### */
+
+#orange-bulb-on{
+    -webkit-animation: orange-bulb-glow infinite 7s;
+	-moz-animation: orange-bulb-glow infinite 7s;
+	-o-animation: orange-bulb-glow infinite 7s;
+	-ms-animation: orange-bulb-glow infinite 7s;
+    animation: orange-bulb-glow infinite 7s;
+    animation-delay: 1s;
+}
+
+@keyframes orange-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes orange-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes orange-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes orange-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes orange-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* #################### PINK BULB #################### */
+
+#pink-bulb-on{
+    -webkit-animation: pink-bulb-glow infinite 7s;
+	-moz-animation: pink-bulb-glow infinite 7s;
+	-o-animation: pink-bulb-glow infinite 7s;
+	-ms-animation: pink-bulb-glow infinite 7s;
+    animation: pink-bulb-glow infinite 7s;
+    animation-delay: 1.5s;
+}
+
+@keyframes pink-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes pink-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes pink-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes pink-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes pink-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* #################### RED BULB #################### */
+
+#red-bulb-on{
+    -webkit-animation: red-bulb-glow infinite 7s;
+	-moz-animation: red-bulb-glow infinite 7s;
+	-o-animation: red-bulb-glow infinite 7s;
+	-ms-animation: red-bulb-glow infinite 7s;
+    animation: red-bulb-glow infinite 7s;
+    animation-delay: 2s;
+}
+
+@keyframes red-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes red-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes red-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes red-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes red-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* #################### YELLOW BULB #################### */
+
+#yellow-bulb-on{
+    -webkit-animation: yellow-bulb-glow infinite 7s;
+	-moz-animation: yellow-bulb-glow infinite 7s;
+	-o-animation: yellow-bulb-glow infinite 7s;
+	-ms-animation: yellow-bulb-glow infinite 7s;
+    animation: yellow-bulb-glow infinite 7s;
+    animation-delay: 2.5s;
+}
+
+@keyframes yellow-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes yellow-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes yellow-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-o-keyframes yellow-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes yellow-bulb-glow{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
