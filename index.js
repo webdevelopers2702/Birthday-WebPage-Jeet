@@ -1,5 +1,5 @@
 memory_track = 0;
-track=0;
+track=1;
 option_tracker = 0;
 
 function displayCake() 
